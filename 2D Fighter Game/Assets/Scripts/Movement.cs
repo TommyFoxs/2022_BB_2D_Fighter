@@ -13,6 +13,8 @@ public class Movement : MonoBehaviour
     private float horizontalMovement = 0;
     public int facing = 1;
 
+    public LayerMask layerMask;
+
 
     // Start is called before the first frame update
     void Start()
@@ -24,7 +26,10 @@ public class Movement : MonoBehaviour
     void Update()
     {
         horizontalMovement = Input.GetAxis("Horizontal");
-        
+        if(Input.GetButtonDown("Jump") && feet.IsTouchingLayers(layerMask))
+        {
+            myRigidBody2D.AddForce(new Vector2(0f,jumpForce),ForceMode2D.Impulse);
+        }
     }
 
     void FixedUpdate()
