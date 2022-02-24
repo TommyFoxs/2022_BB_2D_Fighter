@@ -1645,6 +1645,7 @@ GameObject:
   - component: {fileID: 1142957674}
   - component: {fileID: 1142957673}
   - component: {fileID: 1142957675}
+  - component: {fileID: 1142957676}
   m_Layer: 0
   m_Name: Horse
   m_TagString: Untagged
@@ -1800,6 +1801,22 @@ MonoBehaviour:
   layerMask:
     serializedVersion: 2
     m_Bits: 64
+--- !u!114 &1142957676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1142957669}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea28b2cdf11d78740934e61c698d27da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  health: 0
+  isHit: 0
+  myRigidbody: {fileID: 1142957670}
 --- !u!1 &1780573316
 GameObject:
   m_ObjectHideFlags: 0
